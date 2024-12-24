@@ -5,12 +5,12 @@ all: Action_data.xlsx choco.xlsx Berrie.xlsx
 
 # Target to create Action_data.xlsx from Action.ipynb
 Action_data.xlsx: Action.ipynb
-	jupyter nbconvert --to notebook --execute Action.ipynb --output - 
+	jupyter nbconvert --to notebook --execute Action.ipynb --output
 	# Ensure Action.ipynb generates Action_data.xlsx during its execution
 
 # Target to create choco.xlsx from Scraper Choco Totaal.ipynb
 choco.xlsx: Scraper\ Choco\ Totaal.ipynb
-	jupyter nbconvert --to notebook --execute "Scraper Choco Totaal.ipynb" --output - 
+	jupyter nbconvert --to notebook --execute "Scraper Choco Totaal.ipynb" --output
 	# Ensure Scraper Choco Totaal.ipynb generates choco.xlsx during its execution
 
 # Target to create Berrie.xlsx from BerrieScrape.ipynb"
