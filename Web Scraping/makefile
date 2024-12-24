@@ -1,3 +1,5 @@
+SHELL := /bin/bash
+
 # Define a top-level target that depends on all outputs
 all: Action_data.xlsx choco.xlsx Berrie.xlsx
 
