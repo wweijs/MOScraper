@@ -21,7 +21,7 @@ Berrie.xlsx: BerrieScrape.ipynb
 
 clean:
 	@echo "Running clean target..."
-	rm -f choco.xlsx Action_data.xlsx Berrie.xlsx
+	rm -f -.ipynb
 
 
 
