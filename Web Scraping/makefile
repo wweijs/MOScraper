@@ -1,7 +1,7 @@
 SHELL := /bin/bash
 
 # Define a top-level target that depends on all outputs
-all: Action_data.xlsx choco.xlsx Berrie.xlsx
+all: Action_data.xlsx choco.xlsx Berrie.xlsx clean
 
 # Target to create Action_data.xlsx from Action.ipynb
 Action_data.xlsx: Action.ipynb
