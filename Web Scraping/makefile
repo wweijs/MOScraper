@@ -19,8 +19,9 @@ Berrie.xlsx: BerrieScrape.ipynb
 	# Ensure Scraper Choco Totaal.ipynb generates Berrie.xlsx during its execution
 
 
-# Clean up choco.xlsx, and Action_data.xlsx if needed
 clean:
+	@echo "Running clean target..."
 	rm -f choco.xlsx Action_data.xlsx Berrie.xlsx
+
 
 
