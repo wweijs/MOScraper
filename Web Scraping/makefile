@@ -1,7 +1,7 @@
 SHELL := /bin/bash
 
 # Define a top-level target that depends on all outputs
-all: Action_data.xlsx choco.xlsx Berrie.xlsx clean
+all: Action_data.xlsx choco.xlsx Berrie.xlsx products.csv clean
 
 # Target to create Action_data.xlsx from Action.ipynb
 Action_data.xlsx: Action.ipynb
@@ -17,6 +17,11 @@ choco.xlsx: Scraper\ Choco\ Totaal.ipynb
 Berrie.xlsx: BerrieScrape.ipynb
 	jupyter nbconvert --to notebook --execute BerrieScrape.ipynb --output henk.ipynb
 	# Ensure BerrieScrape.ipynb generates Berrie.xlsx during its execution
+
+# Target to create products.csv from Erik.ipynb
+products.csv: Erik.ipynb
+	jupyter nbconvert --to notebook --execute Erik.ipynb --output henk.ipynb
+	# Ensure Action.ipynb generates Action_data.xlsx during its execution
 
 # Clean up generated files
 clean:
